@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+
+{%load static %}
+
+<link href="{% static 'analysis.css' %}" rel="stylesheet">
+
+{%block content%}
+
+ <div class='img'>
+
+        <p>{{tweets}}</p>
+        <p>{{neutral}}</p>
+    <p>{{positive_percentage}}</p>
+    
+    <p>{{Negative_percentage}}</p>
+    <h1>{{sentiment.title}} sentiments percentage </h1><br><br>
+   
+    <img src="{{sentiment.sentiment_pie.url}}" alt="...">
+
+</div>
+{%endblock%}

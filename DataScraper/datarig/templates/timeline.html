@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+
+{%load static %}
+
+<link href="{% static 'analysis.css' %}" rel="stylesheet">
+
+{%block content%}
+
+ <div class='img'>
+
+    <h1>{{timeline.title}} word frequency </h1><br><br>
+   
+    <img src="{{timeline.timeline_bar.url}}" alt="...">
+
+</div>
+{%endblock%}

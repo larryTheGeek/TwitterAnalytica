@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block content%}
+<link href="{% static 'profile.css' %}" rel="stylesheet">
+<div class='formCont'>
+<form  method="post" class="form-sigin">
+    <img class="mb-4" src="{% static 'twitter.jpg' %}" alt="" width="72" height="72">
+    <img class="mb-4" src="{% static 'twitter.jpg' %}" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Enter twitter username</h1>
+    {% csrf_token %}
+    {{ form.Profile_name}}
+<button class="btn btn-lg btn-primary btn-block" type="submit">submit</button>  
+</form>
+
+</div>
+{%endblock%}

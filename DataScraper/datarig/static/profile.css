@@ -1,0 +1,17 @@
+.btn{
+    width: 100%;
+}
+
+.prof{
+    width: 100%;
+    margin-bottom:1%;
+}
+
+.formCont{
+    width: 40%;
+    margin:0 auto;
+    text-align: center;
+    margin-top: 5%;
+    background-color: aquamarine;
+    padding: 5%;
+}

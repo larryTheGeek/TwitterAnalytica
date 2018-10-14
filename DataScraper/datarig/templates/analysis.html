@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+
+{%load static %}
+
+<link href="{% static 'analysis.css' %}" rel="stylesheet">
+
+{%block content%}
+ <div class='img'>
+
+    <h1>{{analysis.title}} profile statistics </h1><br><br>
+
+    <img src="{{analysis.profile_stats_table.url}}" alt="...">
+
+</div>
+{%endblock%}
